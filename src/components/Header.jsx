@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
-import { LoginModal } from './LoginModal'
+import { ContactModal } from './ContactModal.jsx'
 
 const navItems = [
   { to: '/o-nas', label: 'O nás' },
@@ -44,7 +44,7 @@ export function Header() {
           </button>
         </div>
       </header>
-      <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   )
 }
