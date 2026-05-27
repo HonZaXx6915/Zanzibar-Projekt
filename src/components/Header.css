@@ -250,6 +250,7 @@
   width: 22px;
   height: 18px;
   color: var(--color-cream);
+  opacity: 1;
   transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
@@ -328,6 +329,12 @@
   .header__menu {
     display: inline-flex;
     align-items: center;
+    border: 1.5px solid rgba(244, 232, 216, 0.4);
+    background: rgba(244, 232, 216, 0.05);
+    padding: 8px 10px;
+  }
+  .header__menu-icon {
+    opacity: 1;
   }
   .header__cta {
     display: none;
