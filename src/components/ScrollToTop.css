@@ -1,0 +1,38 @@
+.scroll-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: conic-gradient(var(--color-orange) var(--progress), rgba(255,255,255,0.06) 0%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  border: 1px solid rgba(244,232,216,0.08);
+  color: var(--color-cream);
+  transform: translateY(8px) scale(0.96);
+  opacity: 0;
+  transition: opacity 220ms ease, transform 220ms ease;
+  z-index: 60;
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.scroll-top__svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.scroll-top__arrow {
+  fill: currentColor;
+}
+
+/* hide on smaller screens per request (mobile needn't support it) */
+@media (max-width: 900px) {
+  .scroll-top { display: none; }
+}

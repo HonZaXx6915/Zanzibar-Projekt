@@ -16,15 +16,15 @@
   --color-border-strong: rgba(244, 232, 216, 0.22);
   --color-text: #f0e6da;
   --color-text-muted: #b5a89a;
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Outfit', system-ui, sans-serif;
+  --font-display: 'Inria Serif', serif;
+  --font-body: 'Inria Serif', serif;
   --shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.35);
   --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.28);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 22px;
   --max-content: 1180px;
-  --header-h: 72px;
+  --header-h: 96px;
 }
 
 *,

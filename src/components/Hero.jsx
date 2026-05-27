@@ -1,4 +1,5 @@
 import './Hero.css'
+import { Link } from 'react-router-dom'
 
 const HERO_BG =
   'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2000&q=80'
@@ -13,20 +14,27 @@ export function Hero() {
         aria-label="Grilované jídlo a teplé osvětlení hospody"
       />
       <div className="hero__overlay" />
+      <div className="hero__decor" aria-hidden="true">
+        <span className="hero__dot hero__dot--one" />
+        <span className="hero__dot hero__dot--two" />
+      </div>
       <div className="hero__content">
         <div className="hero__stack">
           <p className="hero__eyebrow">Praha 8 · Ládví</p>
           <h1 id="hero-title" className="hero__title">
             Zanzibar Ládví
           </h1>
-          <p className="hero__subtitle">Poctivá česká hospoda a grill</p>
+          <p className="hero__subtitle">Poctivá česká hospoda, kde chutě žijí a atmosféra obejme.</p>
+          <p className="hero__note">
+            Užij si večer s přáteli v teplém interiéru, se zvukem praskajícího dřeva a vůní grilu.
+          </p>
           <div className="hero__actions">
-            <a className="hero__btn hero__btn--primary" href="#denni-menu">
+            <Link className="hero__btn hero__btn--primary" to="/menu">
               Zobrazit menu
-            </a>
-            <a className="hero__btn hero__btn--ghost" href="#kontakt">
+            </Link>
+            <Link className="hero__btn hero__btn--ghost" to="/kontakt">
               Najít nás
-            </a>
+            </Link>
           </div>
           <div className="hero__badge" role="status">
             <span className="hero__badge-stars" aria-hidden="true">

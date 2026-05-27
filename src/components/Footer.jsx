@@ -18,14 +18,12 @@ export function Footer() {
           <span className="footer__sep">|</span>
           <a href="#kontakt">Kontakt</a>
           <span className="footer__sep">|</span>
-          <a href="https://bar-zanzibar.cz" target="_blank" rel="noreferrer">
-            bar-zanzibar.cz
-          </a>
+
           <span className="footer__sep">|</span>
-          <a href="tel:+420775955680">+420 775 955 680</a>
+          <a href="tel:+420775955680">+420 123 456 789</a>
         </p>
         <p className="footer__copy">
-          © {year} Zanzibar Ládví. Všechna práva vyhrazena.
+          © {year} Made by Kotrč, Patrik, Suchy ❤️
         </p>
       </div>
     </footer>

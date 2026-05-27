@@ -8,6 +8,8 @@ import MenuPage from './pages/MenuPage.jsx'
 import PopularPage from './pages/PopularPage.jsx'
 import ReviewsPage from './pages/ReviewsPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 function App() {
   return (
@@ -21,9 +23,11 @@ function App() {
           <Route path="/oblibene" element={<PopularPage />} />
           <Route path="/recenze" element={<ReviewsPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
