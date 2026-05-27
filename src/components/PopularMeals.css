@@ -1,0 +1,126 @@
+.popular {
+  background: linear-gradient(180deg, var(--color-charcoal) 0%, var(--color-bg) 45%);
+  border-top: 1px solid var(--color-border);
+}
+
+.popular__inner {
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+.popular__header {
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+}
+
+.popular__lede {
+  margin: 0 auto;
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  text-align: center;
+}
+
+.popular__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+.popular__card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.popular__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.popular__card:nth-child(4) {
+  grid-column: span 6;
+}
+
+.popular__card:nth-child(5) {
+  grid-column: span 6;
+}
+
+@media (max-width: 1024px) {
+  .popular__card,
+  .popular__card:nth-child(4),
+  .popular__card:nth-child(5) {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px) {
+  .popular__card,
+  .popular__card:nth-child(4),
+  .popular__card:nth-child(5) {
+    grid-column: span 12;
+  }
+}
+
+.popular__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.popular__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 0.35s ease;
+}
+
+.popular__card:hover .popular__media img {
+  transform: scale(1.08);
+}
+
+.popular__media-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(20, 16, 13, 0.75) 100%
+  );
+  pointer-events: none;
+}
+
+.popular__body {
+  padding: 1.15rem 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.popular__card-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-cream);
+}
+
+.popular__caption {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}

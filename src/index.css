@@ -1,0 +1,117 @@
+:root {
+  --color-bg: #14100d;
+  --color-surface: #1f1814;
+  --color-surface-elevated: #2a211b;
+  --color-charcoal: #252019;
+  --color-wood: #3d2e26;
+  --color-wood-mid: #4a382e;
+  --color-wood-light: #6b5244;
+  --color-cream: #f4e8d8;
+  --color-cream-soft: #e8dcc8;
+  --color-cream-muted: #c9b8a4;
+  --color-orange: #d4652a;
+  --color-orange-bright: #e8894a;
+  --color-orange-dim: rgba(212, 101, 42, 0.15);
+  --color-border: rgba(244, 232, 216, 0.12);
+  --color-border-strong: rgba(244, 232, 216, 0.22);
+  --color-text: #f0e6da;
+  --color-text-muted: #b5a89a;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+  --shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.28);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --max-content: 1180px;
+  --header-h: 72px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-orange-bright);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.section {
+  padding: clamp(3.5rem, 8vw, 5.5rem) clamp(1rem, 4vw, 2rem);
+}
+
+.section__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-orange-bright);
+}
+
+.section__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  color: var(--color-cream);
+}
+
+.section__head {
+  text-align: center;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.section__head .section__title {
+  margin-left: auto;
+  margin-right: auto;
+}

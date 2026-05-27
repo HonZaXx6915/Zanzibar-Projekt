@@ -1,0 +1,130 @@
+.contact {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact__wrap {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.contact__intro {
+  margin-bottom: 0;
+}
+
+.contact__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  align-items: stretch;
+}
+
+@media (max-width: 880px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.contact__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.contact__list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact__list li:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-orange-bright);
+}
+
+.contact__value {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: normal;
+  color: var(--color-cream-soft);
+}
+
+.contact__link {
+  font-weight: 600;
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__directions {
+  margin-top: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--color-bg);
+  background: linear-gradient(
+    135deg,
+    var(--color-orange-bright) 0%,
+    var(--color-orange) 100%
+  );
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(212, 101, 42, 0.35);
+}
+
+.contact__directions:hover {
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+.contact__map-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-soft);
+  min-height: 360px;
+  background: var(--color-charcoal);
+}
+
+.contact__map {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  border: 0;
+  display: block;
+}

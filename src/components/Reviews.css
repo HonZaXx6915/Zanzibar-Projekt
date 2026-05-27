@@ -1,0 +1,115 @@
+.reviews {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.reviews__inner {
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+
+.reviews__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.reviews__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin-top: 0.25rem;
+}
+
+.reviews__summary-text {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.reviews__summary-text strong {
+  color: var(--color-cream);
+  font-weight: 700;
+}
+
+.reviews__stars {
+  display: inline-flex;
+  gap: 0.12rem;
+}
+
+.reviews__star {
+  color: rgba(244, 232, 216, 0.22);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.reviews__star--on {
+  color: #f0b429;
+}
+
+.reviews__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .reviews__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem 1.35rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.reviews__quote {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: italic;
+  font-family: var(--font-display);
+  color: var(--color-cream-soft);
+  line-height: 1.45;
+}
+
+.reviews__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.reviews__author {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-cream);
+}
+
+.reviews__meta {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
