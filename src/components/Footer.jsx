@@ -20,8 +20,17 @@ export function Footer() {
           <span className="footer__sep">|</span>
           <a href="tel:+420123456789">+420 123 456 789</a>
         </p>
-        <p className="footer__copy">
-          © {year} Made by <a href="https://github.com/HonZaXx6915">Kotrč,</a><p>Patrik, Suchy❤️</p></p>
+<p className="footer__copy">
+  © {year} Made by{' '}
+  <a
+    href="https://github.com/HonZaXx6915"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Kotrč
+  </a>
+  , Patrik, Suchy ❤️
+</p>
         
       </div>
     </footer> 
