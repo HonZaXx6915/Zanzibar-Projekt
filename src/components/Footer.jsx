@@ -18,12 +18,12 @@ export function Footer() {
           <span className="footer__sep">|</span>
           <a href="#kontakt">Kontakt</a>
           <span className="footer__sep">|</span>
-          <a href="tel:+420775955680">+420 123 456 789</a>
+          <a href="tel:+420123456789">+420 123 456 789</a>
         </p>
         <p className="footer__copy">
-          © {year} Made by Kotrč, Patrik, Suchy ❤️
-        </p>
+          © {year} Made by <a href="https://github.com/HonZaXx6915">Kotrč,</a><p>Patrik, Suchy❤️</p></p>
+        
       </div>
-    </footer>
+    </footer> 
   )
 }
