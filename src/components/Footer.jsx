@@ -18,8 +18,6 @@ export function Footer() {
           <span className="footer__sep">|</span>
           <a href="#kontakt">Kontakt</a>
           <span className="footer__sep">|</span>
-
-          <span className="footer__sep">|</span>
           <a href="tel:+420775955680">+420 123 456 789</a>
         </p>
         <p className="footer__copy">
