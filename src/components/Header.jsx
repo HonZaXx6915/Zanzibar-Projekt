@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { ContactModal } from './ContactModal.jsx'
+import logoImage from '../assets/logo.png'
 
 const navItems = [
   { to: '/o-nas', label: 'O nás' },
@@ -20,7 +21,13 @@ export function Header() {
       <header className="header" role="banner">
         <div className="header__inner">
           <Link className="header__brand" to="/">
-            <span className="header__brand-mark" aria-hidden="true" />
+            <span className="header__brand-mark">
+              <img
+                className="header__brand-image"
+                src={logoImage}
+                alt="Logo Zanzibar"
+              />
+            </span>
             <span className="header__brand-text">
               <span className="header__brand-title">Zanzibar</span>
               <span className="header__brand-sub">Ládví</span>

@@ -56,12 +56,22 @@
   width: 38px;
   height: 38px;
   border-radius: 10px;
+  overflow: hidden;
   background: linear-gradient(
     135deg,
     var(--color-orange) 0%,
     #8b3a1a 100%
   );
   box-shadow: 0 0 0 2px rgba(244, 232, 216, 0.12);
+  display: grid;
+}
+
+.header__brand-image {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  transform: translate(+2%, -5%) scale(1.05);
+  display: block;
 }
 
 .header__brand-text {
@@ -159,6 +169,8 @@
   .header__inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
     padding: 0.6rem clamp(1rem, 4vw, 2rem) 0.45rem;
   }
   .header__brand, .header__cta, .header__nav {
@@ -263,7 +275,7 @@
 .mobile-nav {
   position: fixed;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,10,0.6), rgba(10,10,10,0.85));
+  background: linear-gradient(180deg, rgba(10,10,10,0.6), rgba(10, 10, 10, 0.85));
   z-index: 80;
   display: flex;
   align-items: flex-start;
@@ -277,7 +289,7 @@
   background: rgba(20,16,13,0.96);
   border-radius: 14px;
   padding: 1.25rem 1rem 2rem;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+  box-shadow: 0 24px 80px rgba(209, 113, 4, 0.663);
   position: relative;
   text-align: center;
 }
@@ -329,12 +341,21 @@
   .header__menu {
     display: inline-flex;
     align-items: center;
-    border: 1.5px solid rgba(244, 232, 216, 0.4);
-    background: rgba(244, 232, 216, 0.05);
+    justify-content: center;
+    border: 1.5px solid rgba(245, 194, 139, 0.9);
+    background: linear-gradient(135deg, #fff5dd, #ffc973);
     padding: 8px 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+    color: #1a120d;
+    margin-left: auto;
+    z-index: 5;
   }
   .header__menu-icon {
     opacity: 1;
+    color: #1a120d;
+  }
+  .header__menu:hover {
+    background: linear-gradient(135deg, #ffe9c0, #ffb854);
   }
   .header__cta {
     display: none;

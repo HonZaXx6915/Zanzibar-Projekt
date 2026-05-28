@@ -65,57 +65,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section reveal chef-choice">
-        <div className="section__head">
-          <p className="section__eyebrow">Speciál</p>
-          <h2 className="section__title">Chef’s choice</h2>
-        </div>
-
-        <div className="chef-grid">
-          <div className="chef-feature">
-            <div className="chef-hero">
-              <div className="chef-hero__media" aria-hidden>
-                <img src="/assets/chef-special.jpg" alt="Dnešní special" onError={(e)=>{e.target.style.display='none'}} />
-              </div>
-              <div className="chef-hero__body">
-                <span className="eyebrow">Dnes od šéfa</span>
-                <h3>Dnešní special</h3>
-                <p>Pomalu pečené hovězí žebírka s pečenou dýní, křupavým šalotkovým glaze a pečenými bylinkami.</p>
-                <div className="chef-hero__meta">Doporučeno s červeným vínem · 320 Kč</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="chef-cards">
-            <article className="dish-card">
-              <div className="dish-media"><img src="/assets/dish1.jpg" alt="Grilovaný losos" onError={(e)=>{e.target.style.display='none'}}/></div>
-              <div className="dish-body">
-                <h4>Grilovaný losos</h4>
-                <p>Citronové beurre blanc a sezónní listy.</p>
-              </div>
-            </article>
-
-            <article className="dish-card">
-              <div className="dish-media"><img src="/assets/dish2.jpg" alt="Kachní prsa" onError={(e)=>{e.target.style.display='none'}}/></div>
-              <div className="dish-body">
-                <h4>Kachní prsa</h4>
-                <p>Glazovaná kachna s karamelizovanou fíkovou omáčkou.</p>
-              </div>
-            </article>
-
-            <article className="dish-card">
-              <div className="dish-media"><img src="/assets/dish3.jpg" alt="Vegetariánský talíř" onError={(e)=>{e.target.style.display='none'}}/></div>
-              <div className="dish-body">
-                <h4>Vegetariánský talíř</h4>
-                <p>Sezónní pečená zelenina, hummus a ořechové pesto.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section className="section reveal">
         <div className="quote-card">
+          <p className="citat">Citát:</p>
           <p>„Jídlo chutná nejlépe tam, kde se cítíš jako doma.“</p>
           <strong>Zanzibar Ládví</strong>
         </div>

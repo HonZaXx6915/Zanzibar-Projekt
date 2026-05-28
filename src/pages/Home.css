@@ -34,6 +34,33 @@
   position: relative;
 }
 
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(232, 148, 72, 0.16), transparent 18%),
+    radial-gradient(circle at 80% 18%, rgba(255, 214, 102, 0.10), transparent 15%),
+    radial-gradient(circle at 50% 75%, rgba(212, 101, 42, 0.08), transparent 35%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(20, 14, 10, 0.7));
+  z-index: -1;
+}
+
+.section--wide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 214, 102, 0.08), transparent 40%);
+  z-index: -1;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -202,6 +229,46 @@
   text-align: left;
 }
 
+.number-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.number-card::before {
+  content: '';
+  position: absolute;
+  inset: -22px;
+  border-radius: calc(var(--radius-lg) + 22px);
+  background: linear-gradient(90deg, rgb(123, 74, 5), rgb(92, 45, 4), rgba(255, 163, 16, 0.12));
+  filter: blur(80px);
+  opacity: 0.85;
+  transform: translateX(-50%) rotate(0deg);
+  animation: glowSweep 7.2s linear infinite;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.number-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 164, 6, 0.834);
+  box-shadow: 0 0 30px rgba(255, 163, 16, 0.12);
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes glowSweep {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(50%) rotate(360deg);
+  }
+}
+
 .number-card h3,
 .special-card h3 {
   margin: 0 0 0.75rem;
@@ -288,3 +355,12 @@
     display: none;
   }
 }
+
+.citat {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-orange-bright);
+  }

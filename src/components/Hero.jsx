@@ -14,19 +14,15 @@ export function Hero() {
         aria-label="Grilované jídlo a teplé osvětlení hospody"
       />
       <div className="hero__overlay" />
-      <div className="hero__decor" aria-hidden="true">
-        <span className="hero__dot hero__dot--one" />
-        <span className="hero__dot hero__dot--two" />
-      </div>
       <div className="hero__content">
         <div className="hero__stack">
           <p className="hero__eyebrow">Praha 8 · Ládví</p>
           <h1 id="hero-title" className="hero__title">
             Zanzibar Ládví
           </h1>
-          <p className="hero__subtitle">Poctivá česká hospoda, kde chutě žijí a atmosféra obejme.</p>
+          <p className="hero__subtitle">Chuť vytvořená ohněm</p>
           <p className="hero__note">
-            Užij si večer s přáteli v teplém interiéru, se zvukem praskajícího dřeva a vůní grilu.
+            Prémiové maso, autentický grill a atmosféra inspirovaná exotikou Zanzibaru.
           </p>
           <div className="hero__actions">
             <Link className="hero__btn hero__btn--primary" to="/menu">
@@ -36,14 +32,14 @@ export function Hero() {
               Najít nás
             </Link>
           </div>
-          <div className="hero__badge" role="status">
+          <Link className="hero__badge" to="/recenze">
             <span className="hero__badge-stars" aria-hidden="true">
               ★★★★★
             </span>
             <span className="hero__badge-text">
               <strong>4,7</strong> / 5 <span className="hero__badge-muted">(219 recenzí)</span>
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
