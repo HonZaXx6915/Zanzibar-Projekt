@@ -17,7 +17,6 @@ export function DailyMenu() {
     >
       <div className="daily__inner">
         <header className="daily__header section__head">
-          <p className="section__eyebrow">Denní nabídka</p>
           <h2 id="daily-title" className="section__title">
             Polední menu
           </h2>

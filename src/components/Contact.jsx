@@ -8,7 +8,6 @@ export function Contact() {
     <section id="kontakt" className="contact section" aria-labelledby="contact-title">
       <div className="contact__wrap">
         <div className="contact__intro section__head">
-          <p className="section__eyebrow">Kontakt &amp; lokace</p>
           <h2 id="contact-title" className="section__title">
             Přijďte na pivo i talíř
           </h2>

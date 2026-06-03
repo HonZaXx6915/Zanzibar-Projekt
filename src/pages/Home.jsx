@@ -68,7 +68,7 @@ export default function Home() {
       <section className="section reveal">
         <div className="quote-card">
           <p className="citat">Citát:</p>
-          <p>„Jídlo chutná nejlépe tam, kde se cítíš jako doma.“</p>
+          <p>„Jídlo chutná nejlépe u grillu.“</p>
           <strong>Zanzibar Ládví</strong>
         </div>
       </section>

@@ -56,7 +56,6 @@ export function About() {
     <section id="o-nas" className="about section" aria-labelledby="about-title">
       <div className="about__inner">
         <div className="about__intro section__head">
-          <p className="section__eyebrow">Kdo jsme</p>
           <h2 id="about-title" className="section__title">
             Malá hospoda se srdcem
           </h2>

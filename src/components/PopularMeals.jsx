@@ -42,7 +42,6 @@ export function PopularMeals() {
     >
       <div className="popular__inner">
         <header className="popular__header section__head">
-          <p className="section__eyebrow">Oblíbené</p>
           <h2 id="popular-title" className="section__title">
             Jídla, která u nás frčí
           </h2>

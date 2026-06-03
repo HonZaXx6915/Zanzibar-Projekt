@@ -44,7 +44,6 @@ export function Reviews() {
     <section id="recenze" className="reviews section" aria-labelledby="reviews-title">
       <div className="reviews__inner">
         <header className="reviews__header section__head">
-          <p className="section__eyebrow">Recenze</p>
           <h2 id="reviews-title" className="section__title">
             Co říkají hosté
           </h2>
